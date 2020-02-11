@@ -18,7 +18,10 @@
     font-weight: 700;
     color: $color_white;
     border: 1px solid $color_middle_blue;
-    margin-left: 20px;
+}
+
+.navbar-user a:last-child{
+    color:white!important;
 }
 
 @media (min-width: 576px) { 

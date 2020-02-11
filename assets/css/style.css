@@ -11,6 +11,38 @@ header {
 }
 
 @media (min-width: 1200px) {
+  /* Add a black background color to the top navigation */
+  .topnav {
+    overflow: hidden;
+  }
+
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #333745;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    color: white;
+  }
+
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
   nav {
     font-size: 14px;
   }
@@ -36,6 +68,60 @@ header {
     grid-column: 10/span 12;
     justify-content: end;
     align-items: center;
+  }
+}
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #333745;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
   }
 }
 .row {
@@ -340,7 +426,7 @@ footer .footer__list_box {
   display: flex;
 }
 footer .footer__list_box p {
-  text-align: center !important;
+  text-align: center;
   width: 100%;
 }
 
@@ -348,9 +434,12 @@ footer .footer__list_box p {
   footer ul {
     margin: initial;
   }
-  footer p {
+  footer .footer__list_box {
+    display: flex;
+  }
+  footer .footer__list_box p {
     text-align: right;
-    margin: 0;
+    width: 100%;
   }
 }
 h1, h2, h3, h4 {
@@ -386,7 +475,7 @@ main figure img {
 
 section {
   background-image: url("../img/bg-price.svg");
-  background-position: center top;
+  background-position: center -100px;
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
@@ -395,6 +484,7 @@ section {
 section h2 {
   color: #fff;
   font-size: 45px;
+  padding-top: 100px;
 }
 
 .animation-element {
@@ -422,6 +512,21 @@ section h2 {
   -o-transform: translate3d(0px, 0px, 0px);
 }
 
+@media (min-width: 1200px) {
+  section {
+    background-image: url("../img/bg-price.svg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    padding-bottom: 100px;
+  }
+  section h2 {
+    color: #fff;
+    font-size: 45px;
+    padding-top: 100px;
+  }
+}
 .button-promos {
   background-color: #2ab7ca;
   padding: 10px;
@@ -441,7 +546,10 @@ section h2 {
   font-weight: 700;
   color: #fff;
   border: 1px solid #77d1dd;
-  margin-left: 20px;
+}
+
+.navbar-user a:last-child {
+  color: white !important;
 }
 
 .card {

@@ -18,7 +18,7 @@ footer{
     .footer__list_box{
         display: flex;
         p{
-            text-align: center!important;
+            text-align: center;
             width: 100%;
         }
     }
@@ -39,9 +39,12 @@ footer{
         ul{
             margin: initial;
         }
-        p{
-            text-align: right;
-            margin: 0;
+        .footer__list_box{
+            display: flex;
+            p{
+                text-align: right;
+                width: 100%;
+            }
         }
     }
 

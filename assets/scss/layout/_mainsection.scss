@@ -32,15 +32,17 @@ main{
 
 section{
     background-image: url('../img/bg-price.svg');
-    background-position: center top;
+    background-position: center -100px;
     background-repeat: no-repeat;
     background-size: cover;
+    // background-color: #333745;
     height: auto;
     padding-bottom: 50px;
     
     h2{
         color: $color_white;
         font-size: $font_size_4x-large;
+        padding-top: 100px;
     }
 }
 
@@ -87,6 +89,18 @@ section{
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
     section{
-   
+        background-image: url('../img/bg-price.svg');
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        // background-color: white;
+        height: auto;
+        padding-bottom: 100px;
+        
+        h2{
+            color: $color_white;
+            font-size: $font_size_4x-large;
+            padding-top: 100px;
+        }
     }
  }

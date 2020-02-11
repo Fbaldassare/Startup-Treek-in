@@ -7,35 +7,38 @@
 
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Start Up Treek In</title>
 </head>
 
 <body>
-    <!-- nav -->
-    <nav>
-        <div class="container">
+    <!-- nav beta -->
+    <div class="container">
+        <div class="topnav" id="myTopnav">
             <div class="row">
-                <div class="col-md-1">
-                    <i><img src="assets/img/Logo.svg" alt="logo"></i>
+                <div class="col-xl-9 col-md-8">
+                    <a href="#home" class="active"><i><img src="assets/img/Logo.svg" alt="logo"></i>
+                    </a>
+                    <a href="#news">Acerca de</a>
+                    <a href="#contact">Características</a>
+                    <a href="#about">Precios</a>
                 </div>
-                <div class="col-md-8">
-                    <ul>
-                        <li><a href="#">Acerca de</a></li>
-                        <li><a href="#">Características</a></li>
-                        <li><a href="#">Precios</a></li>
-                    </ul>
+                <div class="col-xl-3 col-md-4">
+                    <a href="#">Iniciar Sesión</a>
+                    <a href="#"><button id="button-menu">Registrate</button></a>
                 </div>
-                <div class="col-md-3">
-                    <div class="navbar-user">
-                        <a href="#">Iniciar Sesión</a>
-                        <button id="button-menu"><a href="#">Registrate</a></button>
-                    </div>
-                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
             </div>
-        </div>
-    </nav>
+          </div>
+    </div>
+
+    <!-- nav -->
+
     <!-- /nav -->
 
     <!-- header -->
@@ -152,8 +155,10 @@
         </div>
     </footer>
     <!-- /footer -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"> </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"> </script>
     <script src="assets/js/animate.js"></script>
+    <script src="assets/js/nav.js"></script>
 </body>
 
 </html>
