@@ -1,0 +1,48 @@
+footer{
+    background-color:$color_raising_black;
+    height: auto;
+    color: white;
+    font-size: $font_size_x-small;
+    padding: 20px 0 20px 0;
+
+    ul{
+        padding: 0;
+        margin:auto;
+        li{
+            display: inline-block;
+            font-family: $font-primary;
+            padding-right: 20px;
+            line-height: 2em;    
+        } 
+    }
+    .footer__list_box{
+        display: flex;
+        p{
+            text-align: center!important;
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 576px) {  
+
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+
+    footer{
+        ul{
+            margin: initial;
+        }
+        p{
+            text-align: right;
+            margin: 0;
+        }
+    }
+
+ }

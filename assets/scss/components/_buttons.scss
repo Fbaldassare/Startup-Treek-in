@@ -1,0 +1,34 @@
+
+.button-promos{
+    background-color:$color_bali_blue;
+    padding: 10px;
+    font-size: $font_size_medium;
+    font-family: $font-primary;
+    font-weight: 700;
+    color: $color_white;
+    width: 100%;
+    border: 1px solid $color_middle_blue;
+}
+
+#button-menu{
+    background-color:$color_bali_blue;
+    padding: 5px;
+    font-size: $font_size_medium;
+    font-family: $font-primary;
+    font-weight: 700;
+    color: $color_white;
+    border: 1px solid $color_middle_blue;
+    margin-left: 20px;
+}
+
+@media (min-width: 576px) { 
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { }

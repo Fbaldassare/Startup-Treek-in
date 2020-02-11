@@ -1,0 +1,59 @@
+
+.card{
+    grid-column: 1fr;
+    background-color:$color_white;  
+    padding: 30px;
+
+    h4{
+        font-size: $font_size_x-large;
+        margin: 0px;
+    }
+    p{
+        font-size: $font_size_5x-large;
+        font-family: $font-primary;
+        font-weight: 700;
+        margin:0px;
+    }
+    ul{
+        font-family: $font-secondary;
+        height: auto;;
+        li{
+            line-height: 2em;
+        }
+    }
+    hr{
+        margin:20px 0px 20px 0px
+    }
+}
+
+
+@media (min-width: 576px) { 
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .card{
+        width: 100%;
+        padding: 30px;
+        height: auto;
+        box-sizing: border-box;
+        ul{
+            font-family: $font-secondary;
+            height: 10em;;
+            li{
+                line-height: 2em;
+            }
+        }
+    }
+
+ }

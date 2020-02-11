@@ -1,0 +1,22 @@
+h1{
+    font-size:$font_size_5x-large;
+}
+
+header{
+    background-image: url('../img/bg-hero.svg');
+    background-position: 100% 30%;
+    background-repeat: no-repeat;
+    background-size: 190% 190%;
+    height: 100vh;
+}
+
+@media (min-width: 992px) { 
+    header{
+        background-image: url('../img/bg-hero.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 130vh;
+    }
+ }
+
