@@ -479,12 +479,21 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
-  padding-bottom: 50px;
+  position: relative;
+  z-index: 1;
 }
 section h2 {
   color: #fff;
   font-size: 45px;
   padding-top: 100px;
+}
+
+#section-fixed {
+  background-color: #333745;
+  background-image: none;
+  height: 100px;
+  width: 100%;
+  bottom: 100px;
 }
 
 .animation-element {

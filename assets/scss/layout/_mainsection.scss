@@ -37,13 +37,22 @@ section{
     background-size: cover;
     // background-color: #333745;
     height: auto;
-    padding-bottom: 50px;
+    position: relative;
+    z-index: 1;
     
     h2{
         color: $color_white;
         font-size: $font_size_4x-large;
         padding-top: 100px;
     }
+}
+
+#section-fixed{
+    background-color: $color_onyx;
+    background-image: none;
+    height: 100px;
+    width: 100%;
+    bottom:100px ;
 }
 
 // animaciones
