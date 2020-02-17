@@ -533,7 +533,15 @@ section h2 {
   section h2 {
     color: #fff;
     font-size: 45px;
-    padding-top: 100px;
+    padding-top: 130px;
+  }
+
+  #section-fixed {
+    background-color: #333745;
+    background-image: none;
+    height: 30px;
+    width: 100%;
+    bottom: 100px;
   }
 }
 .button-promos {

@@ -109,7 +109,15 @@ section{
         h2{
             color: $color_white;
             font-size: $font_size_4x-large;
-            padding-top: 100px;
+            padding-top: 130px;
         }
+    }
+    #section-fixed{
+        background-color: $color_onyx;
+        background-image: none;
+        height: 30px;
+        width: 100%;
+        bottom:100px ;
+        
     }
  }
